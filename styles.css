@@ -166,6 +166,21 @@ div.main > div {
 .contact:active {
   transform: scale(0.9);
 }
+.modal_close {
+  background-color: transparent;
+  color: aquamarine;
+  border: 1px solid white;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  transition: 300ms ease-in-out;
+}
+.modal_close:hover {
+  background-color: white;
+  color: #0b192f;
+}
+.modal_close:active {
+  transform: scale(0.9);
+}
 #myModal {
   backdrop-filter: blur(9px);
 }
@@ -174,6 +189,7 @@ div.main > div {
   list-style-type: none;
 }
 #myModal .modal-content {
+  border-radius: 1em;
   background: #0b192f;
 }
 #myModal .modal-header {
