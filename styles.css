@@ -68,16 +68,23 @@ div.links {
   padding: 0em 1em;
   text-decoration: none;
   color: white;
+  transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .links > nav ul li a:hover {
-  color: #0b192f;
-  background-color: white !important;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1) !important;
   border-radius: 1.2em;
+}
+.links > nav ul li a:active {
+  transform: scale(0.9);
 }
 .workexperience {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1;
+  gap: 10px;
+  min-height: 40vh;
+  max-width: 40vw;
 }
 .companies nav {
   width: inherit;
@@ -101,9 +108,82 @@ div.links {
   display: block;
   padding: 1em 1em;
   width: 9vw;
+  transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .companies nav ul li a:hover {
   background-color: #112240;
   box-sizing: border-box;
-  border-left: 1px solid aquamarine;
+}
+.companies nav ul li a:active {
+  transform: scale(0.97);
+}
+.linkActive {
+  color: #0b192f !important;
+  background-color: white !important;
+  border-radius: 1.2em;
+}
+.companyActive {
+  background-color: #112240;
+  box-sizing: border-box;
+  border-left: 1px solid aquamarine !important;
+}
+div.experience > div {
+  display: none;
+}
+div.experience > div span {
+  color: aquamarine;
+}
+div.main > div {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+.show_grid {
+  display: grid !important;
+}
+.techskills h5 {
+  color: rgba(255, 255, 255, 0.8);
+}
+.techskills p {
+  color: #7fffd4 !important;
+}
+.contact {
+  position: fixed;
+  bottom: 10em;
+  float: right;
+  background-color: transparent;
+  color: aquamarine;
+  border: 1px solid white;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  transition: 300ms ease-in-out;
+}
+.contact:hover {
+  background-color: white;
+  color: #0b192f;
+}
+.contact:active {
+  transform: scale(0.9);
+}
+#myModal {
+  backdrop-filter: blur(9px);
+}
+#myModal li {
+  padding: 1em;
+  list-style-type: none;
+}
+#myModal .modal-content {
+  background: #0b192f;
+}
+#myModal .modal-header {
+  border-bottom: none;
+}
+#myModal .modal-body a {
+  padding: 1em;
+  text-decoration: none;
+  color: white;
+}
+#myModal .btn-close {
+  background-image: none;
 }

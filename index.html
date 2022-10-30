@@ -1,55 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Document</title>
 </head>
+
 <body>
 
+    <button class="contact" role="button" data-bs-toggle="modal" data-bs-target="#myModal">Get In Touch</button>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <li><i class="bi bi-mailbox"></i><a href="mailto:swwyrik@hotmail.com">swwyrik@hotmail.com</a></li>
+                    <li><i class="bi bi-telephone-inbound"></i><a>+91-8331889577</a></li>
+                    <li><i class="bi bi-linkedin"></i><a target="_blank"
+                            href="https://www.linkedin.com/in/swyrik/">swyrik</a></li>
+                </div>
+                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
     <div class="main">
-        <!-- <div class="intro animate__animated animate__fadeInUp">
+        <div class="intro animate__animated animate__fadeInUp">
             <p>Hi, my name is</p>
             <h2>Swyrik Thupili.</h2>
             <h3>I'm a fullstack developer.</h3>
-            <p class="objective">Computer Science graduate with over 5.10 years of Full Stack Development experience with java,
-               <br> spring boot, angular, SQL, Red HatOpenshift, Kubernetes, Docker. Enthusiastic about developing 
-               <br> forward-thinking solutions to tomorrow’s productivity problems. Resourceful and passionate 
-               <br> about software development, problem-solving, debugging.</p>
-        </div> -->
-        <div class="workexperience">
+            <p class="objective">Computer Science graduate with over 5.10 years of Full Stack Development experience
+                with java,
+                <br> spring boot, angular, SQL, Red HatOpenshift, Kubernetes, Docker. Enthusiastic about developing
+                <br> forward-thinking solutions to tomorrow’s productivity problems. Resourceful and passionate
+                <br> about software development, problem-solving, debugging.
+            </p>
+        </div>
+        <div class="workexperience animate__animated animate__fadeInUp">
             <div class="companies">
                 <nav class="companies-nav">
                     <ul>
-                        <li><a href="">Opentext</a></li>
-                        <li><a href="">Legato</a></li>
-                        <li><a href="">Accenture</a></li>
+                        <li id="accenture"><a class="companyActive">Accenture</a></li>
+                        <li id="legato"><a>Legato</a></li>
+                        <li id="opentext"><a>Opentext</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="experience"></div>
+            <div class="experience">
+                <div id="opentext">
+                    <h4>Senior Software Engineer @ <span>Opentext</span></h4>
+                    <p>Oct 2021 - Present</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="legato">
+                    <h4>Senior Software Engineer @ <span>Legato</span></h4>
+                    <p>Aug 2019 - Oct 2021</p>
+                    <ul>
+                        <li>Improved batch performance by 10x using a completable future.</li>
+                        <li>Implemented OAuth2.0 Authorization and Authentication in spring cloud data flow.</li>
+                        <li>Implemented Kubernetes ConfigMaps and Secrets in a spring cloud task application to
+                            <br>externalize configuration.
+                        </li>
+                        <li>Responsible for creating rest APIs for backend using spring web and spring boot.</li>
+                        <li>Implemented factory design pattern to facilitate parallel execution of multiple spring cloud
+                            <br>tasks.
+                        </li>
+                        <li>Responsible for creating common components library for an angular application.</li>
+                        <li>Implemented Common code for file transfer protocols thereby reducing team's effort by 30%.
+                        </li>
+                        <li>Implemented a common code to read delimited data files and convert them into java
+                            <br>collections using java reflection API. (CSV and PipeDelimited) It helped in reducing the
+                            <br>team's effort by 50%.
+                        </li>
+                        <li>Responsible for over 60+ technical evaluations as an interview panelistduring recruitment
+                            <br>drives to date.
+                        </li>
+                    </ul>
+                </div>
+                <div id="accenture">
+                    <h4>Software Engineer @ <span>Accenture</span></h4>
+                    <p>Dec 2016 - Aug 2019</p>
+                    <ul>
+                        <li>Proposed and implemented a solution to reduce database load by 80%for generating dynamic pdf
+                            <br>in web applications according to the userinput using java, i-text pdf, spring MVC,
+                            <br>jQuery, and JavaScript.
+                        </li>
+                        <li>Developed Donut charts using D3 JS and implemented dynamic logicwhen a user selects an item
+                            <br>it automatically pullup relevant details from the mongo Database.
+                        </li>
+                        <li>Implemented versioning for JavaScript resource files to overcome webapplication cache
+                            <br>issues.
+                        </li>
+                        <li>Developed a rich interface for a dynamic web report using Data tablesJavaScript Plugin.</li>
+                        <li>Working with Agile methodology to change and continuously deliverbusiness value.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skills animate__animated animate__fadeInUp">
+            <div class="techskills">
+                <h5>Programming Languages/ Scripting</h5>
+                <p>Java, JavaScript, TypeScript, SQL, Shell Scripting</p>
+                <hr>
+                <h5>Java Frameworks/ Web Services</h5>
+                <p>Spring boot, spring cloud task, spring cloud data flow,spring data jpa, spring mvc, Microservices,
+                    RestServices</p>
+                <hr>
+                <h5>Web Technologies</h5>
+                <p>JavaScript, TypeScript, Angular, RxJS, HTML, SCSS</p>
+                <hr>
+                <h5>Databases</h5>
+                <p>Oracle, DB2</p>
+                <hr>
+                <h5>Tools/Devops</h5>
+                <p>Git, Jira, Bitbucket, Docker, Kubernetes, OpenShift,Postman</p>
+                <hr>
+                <h5>IDE</h5>
+                <p>IntelliJ, Eclipse, VS-code</p>
+                <hr>
+            </div>
+        </div>
+        <div class="education animate__animated animate__fadeInUp">
+            <div class="college">
+                <h3>Bachelors of Technology</h3>
+                <p>Computer Science & Engineering</p>
+                <h5>Jawaharlal Nehru Technological University Anantapur</h5>
+                <p style="color: white">JNTUACEA</p>
+                <p style="color: white">2012 - 2016</p>
+                <p>First class with distinction</p>
+            </div>
+        </div>
+        <div class="achievements animate__animated animate__fadeInUp">
+            <div class="awrads">
+                <h4>IMPACT Award – Legato Health Technologies (08/2020)</h4>
+                <p>Recognized for implementing completable future to improvethe performance of tasks.</p>
+                <hr>
+                <h4>Accenture Celebrate Excellence – Accenture (06/2018)</h4>
+                <p>Recognized for the individual performance with-in H&PS DU.</p>
+            </div>
+        </div>
+        <div class="lang animate__animated animate__fadeInUp">
+            <h5>English</h5>
+            <p>Native or Bilingual Proficiency</p>
+            <hr>
+            <h5>Hindi</h5>
+            <p>Limited Working Proficiency</p>
+            <hr>
+            <h5>Telugu</h5>
+            <p>Native or Bilingual Proficiency</p>
+            <hr>
+        </div>
+        <div class="cert animate__animated animate__fadeInUp">
+            <h4>Certified SAFe® 4 Practitioner (11/2018 - Present)</h4>
+            <p>Scaled Agile Framework Certificate</p>
         </div>
     </div>
-    
+
 </body>
 <div class="links animate__animated animate__fadeInUp">
     <nav>
         <ul>
-            <li><a href="#experience">Work Experience</a></li>
-            <li><a href="#skills">Technical Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#language">Languages</a></li>
-            <li><a href="#certificates">Certificates</a></li>
+            <li id="intro"><a href="#intro">Intro</a></li>
+            <li id="workexperience"><a href="#experience">Work Experience</a></li>
+            <li id="skills"><a href="#skills">Technical Skills</a></li>
+            <li id="education"><a href="#education">Education</a></li>
+            <li id="achievements"><a href="#achievements">Achievements</a></li>
+            <li id="lang"><a href="#language">Languages</a></li>
+            <li id="cert"><a href="#certificates">Certificates</a></li>
         </ul>
     </nav>
 </div>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+
 </html>
