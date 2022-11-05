@@ -54,11 +54,11 @@ function makeLinkElementActive(e) {
 
 linkPanelElements.forEach((element) => {
   element.addEventListener("click", (e) => {
-    makeLinkElementActive(e.target);
+    makeLinkPanelElementActive(e.target);
   });
 });
 
-function makeLinkElementActive(e) {
+function makeLinkPanelElementActive(e) {
   hideLinks();
   linkPanelElements.forEach((element) => {
     element.classList.remove("linkActive");
@@ -101,11 +101,11 @@ function makeCompaniesElementActive(e) {
 }
 
 function showLinks() {
-  linksPanel.style.visibility = "visible";
+  linksPanel.style.transform = "translate(0px, 0px)";
   linksPanelBg.style.display = "block";
 }
 
 function hideLinks() {
-  linksPanel.style.visibility = "hidden";
+  linksPanel.style.transform = "translate(0%, 150%)";
   linksPanelBg.style.display = "none";
 }
