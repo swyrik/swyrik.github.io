@@ -197,6 +197,9 @@ div.main > div {
   &:active {
     transform: scale(0.9);
   }
+  i {
+    display: none;
+  }
 }
 
 .modal_close {
@@ -331,11 +334,37 @@ div.links-icon {
 }
 
 @media screen and (max-width: 891px) {
+  .main h2,
+  .main h3 {
+    font-weight: 600;
+    font-size: 2.6em;
+  }
+
+  .main h3 {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+  }
   div.links {
     visibility: hidden;
   }
 
   div.links-icon {
     display: block;
+  }
+
+  .main > div {
+    padding: 0em 1em;
+  }
+
+  .contact {
+    i {
+      display: block;
+    }
+    span {
+      display: none;
+    }
+    color: white;
+    bottom: 1em;
+    right: 2em;
   }
 }
