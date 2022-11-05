@@ -327,4 +327,17 @@ div.links-icon:hover {
   .contact span {
     display: none;
   }
+  .workexperience {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .companies nav {
+    flex-direction: row;
+  }
+  .companies nav ul {
+    flex-direction: row;
+  }
+  .companies nav ul li a {
+    width: auto;
+  }
 }
