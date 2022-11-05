@@ -123,6 +123,10 @@ div.links {
   background-color: white !important;
   border-radius: 1.2em;
 }
+.linkPanelActive {
+  border-radius: 1.2em;
+  box-shadow: 1px 1px 15px rgba(11, 25, 47, 0.15);
+}
 .companyActive {
   background-color: #112240;
   box-sizing: border-box;
@@ -266,7 +270,13 @@ div.links-icon:hover {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #0b192f !important;
+  color: #0b192f;
+}
+.linkspanel nav ul li a:hover {
+  border-radius: 1.2em;
+  color: white !important;
+  transform: scale(0.95);
+  background-color: #0b192f;
 }
 .linkspanel nav ul li a:active {
   border-radius: 1.2em;

@@ -61,9 +61,9 @@ linkPanelElements.forEach((element) => {
 function makeLinkPanelElementActive(e) {
   hideLinks();
   linkPanelElements.forEach((element) => {
-    element.classList.remove("linkActive");
+    element.classList.remove("linkPanelActive");
   });
-  e.classList.add("linkActive");
+  e.classList.add("linkPanelActive");
   mainDivElements.forEach((element) => {
     element.classList.remove("show");
     element.classList.remove("show_grid");
