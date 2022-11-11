@@ -4,6 +4,27 @@
   box-sizing: border-box;
 }
 
+.gradient-anime {
+  background: -webkit-linear-gradient(45deg, aquamarine, rgb(142, 25, 162));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
+  animation: movebg 6s ease infinite;
+}
+
+@keyframes movebg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 html,
 body {
   margin: 0px;
