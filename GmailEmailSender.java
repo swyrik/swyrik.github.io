@@ -3,7 +3,7 @@ import javax.mail.*;
 import javax.mail.internet.*;
 
 /**
- * qxso jdhm bssg kmlb
+ * cXhzb2pkaG1ic3Nna21sYg==
  * javatest
  */
 
@@ -11,7 +11,7 @@ public class GmailEmailSender {
     public static void main(String[] args) {
         // Set your Mailgun SMTP server credentials
         final String username = "swwyrik@gmail.com";
-        final String password = "qxsojdhmbssgkmlb";
+        final String password = "arsenal!2221";
 
         // Set the recipient's email address
         String to = "thupiliswyrik@gmail.com";
